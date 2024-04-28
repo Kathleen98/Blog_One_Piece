@@ -1,6 +1,7 @@
 import './App.css'
 import '@mantine/core/styles.css';
-import HeroBanner from '../components/Banner/HeroBanner';
+import HeroBanner from './components/Banner/index';
+import Main from './components/Main';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <div>
         <HeroBanner/>
+        <Main></Main>
       </div>
     </>
   )

@@ -1,0 +1,31 @@
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../public/onePieceHero.jpeg");
+    background-size: 100vw 100vh;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.hero__nav{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.hero__nav-logo{
+    width: 5vw;
+    height: 10vh;
+}
+
+.hero__nav-list{
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.hero__nav__list__item-link{
+    color: #94E0C6;
+    font-weight: bold;
+}
