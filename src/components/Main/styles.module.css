@@ -1,7 +1,9 @@
 .container{
     max-width: 100vw;
+    padding: 2rem 6rem;
+    background: #F1F0E8;
 }
 
 .container__carousel{
-    display: flex;
+    display: block;
 }
