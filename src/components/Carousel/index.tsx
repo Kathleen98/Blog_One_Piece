@@ -1,12 +1,12 @@
 import styles from './styles.module.css';
 import { Carousel} from '@mantine/carousel';
-import { Card, Image, Text, Badge, Button, Group, Title, Flex} from '@mantine/core';
+import { Card, Image, Avatar, Title, Flex} from '@mantine/core';
 import '@mantine/carousel/styles.css';
 
 
 function CarouselCharacter(){
     return(
-        <Flex direction={'column'}>
+        <Flex  >
             <Title 
                 style={{textAlign: 'center', textTransform: 'uppercase'}}
                 pt={16}
@@ -17,92 +17,36 @@ function CarouselCharacter(){
             >
                 Personagens
             </Title>
-            <Carousel className={styles.container__carousel}
-                withIndicators
-                height={200}
-                slideSize={{ base: '100%', sm: '50%', md: '33.333333%' }}
-                slideGap={{ base: 0, sm: 'md' }}
-                loop
-                align="start"
-            >
-                <Carousel.Slide>
-                    <Card shadow="sm" padding="lg" radius="md" withBorder>
-                        <Card.Section>
-                            <Image
-                            src=""
-                            height={160}
-                            alt="Norway"
-                            />
-                        </Card.Section>
 
-                        <Group justify="space-between" mt="md" mb="xs">
-                            <Text fw={500}>Norway Fjord Adventures</Text>
-                            <Badge color="pink">Pirata</Badge>
-                        </Group>
+            <Avatar
+                src="https://i.pinimg.com/564x/62/7f/02/627f02f8de7b28d584d4c4e099bdcfff.jpg"
+                alt='Nami'
+            />
 
-                        <Text size="sm" c="dimmed">
-                            With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-                            activities on and around the fjords of Norway
-                        </Text>
+            <Avatar
+                src="https://i.pinimg.com/564x/99/ff/6a/99ff6a060b2a59f99a1377880a057ecc.jpg"
+                alt='Nami'
+            />
+            <Avatar
+                src="https://i.pinimg.com/564x/3d/d9/37/3dd937012836726e38ad649049f2faf3.jpg"
+                alt='Nami'
+            />
 
-                        <Button color="blue" fullWidth mt="md" radius="md">
-                            Book classic tour now
-                        </Button>
-                    </Card>
-                </Carousel.Slide>
+            <Avatar
+                src="https://i.pinimg.com/564x/f6/5d/46/f65d4648d2553fcc14fb7426f6176fa0.jpg"
+                alt='Chopper'
+            />
 
-                <Carousel.Slide>
-                    <Card shadow="sm" padding="lg" radius="md" withBorder>
-                        <Card.Section>
-                            <Image
-                            src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
-                            height={160}
-                            alt="Norway"
-                            />
-                        </Card.Section>
+            <Avatar
+                src="https://i.pinimg.com/564x/5b/9b/1d/5b9b1df04f5891011138929fe938411c.jpg"
+                alt='Chopper'
+            />
 
-                        <Group justify="space-between" mt="md" mb="xs">
-                            <Text fw={500}>Norway Fjord Adventures</Text>
-                            <Badge color="pink">Pirata</Badge>
-                        </Group>
-
-                        <Text size="sm" c="dimmed">
-                            With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-                            activities on and around the fjords of Norway
-                        </Text>
-
-                        <Button color="blue" fullWidth mt="md" radius="md">
-                            Book classic tour now
-                        </Button>
-                    </Card>
-                </Carousel.Slide>
-
-                <Carousel.Slide>
-                    <Card shadow="sm" padding="lg" radius="md" withBorder>
-                        <Card.Section>
-                            <Image
-                            src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
-                            height={160}
-                            alt="Norway"
-                            />
-                        </Card.Section>
-
-                        <Group justify="space-between" mt="md" mb="xs">
-                            <Text fw={500}>Norway Fjord Adventures</Text>
-                            <Badge color="pink">Pirata</Badge>
-                        </Group>
-
-                        <Text size="sm" c="dimmed">
-                            With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-                            activities on and around the fjords of Norway
-                        </Text>
-
-                        <Button color="blue" fullWidth mt="md" radius="md">
-                            Book classic tour now
-                        </Button>
-                    </Card>
-                </Carousel.Slide>
-            </Carousel>
+            <Avatar
+                src="https://i.pinimg.com/564x/07/22/a1/0722a142cc3d61709838d8cb383c6462.jpg"
+                alt='Chopper'
+            />
+                
         </Flex>
 
     )
