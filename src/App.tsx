@@ -1,7 +1,7 @@
 import './App.css'
 import '@mantine/core/styles.css';
 import HeroBanner from './components/Banner/index';
-import Main from './components/Main';
+import CarouselCharacter from './components/Carousel';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <div>
         <HeroBanner/>
-        <Main></Main>
+        <CarouselCharacter></CarouselCharacter>
       </div>
     </>
   )

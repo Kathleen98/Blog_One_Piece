@@ -1,12 +1,23 @@
 import styles from './styles.module.css';
-import { Carousel } from '@mantine/carousel';
-import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
+import { Carousel} from '@mantine/carousel';
+import { Card, Image, Text, Badge, Button, Group, Title, Flex} from '@mantine/core';
 import '@mantine/carousel/styles.css';
 
-function Main(){
+
+function CarouselCharacter(){
     return(
-        <main className={styles.container}>
-             <Carousel className={styles.container__carousel}
+        <Flex direction={'column'}>
+            <Title 
+                style={{textAlign: 'center', textTransform: 'uppercase'}}
+                pt={16}
+                pb={16}
+                size={20}
+                fw={500}
+                c={'#1164B1'}
+            >
+                Personagens
+            </Title>
+            <Carousel className={styles.container__carousel}
                 withIndicators
                 height={200}
                 slideSize={{ base: '100%', sm: '50%', md: '33.333333%' }}
@@ -18,7 +29,7 @@ function Main(){
                     <Card shadow="sm" padding="lg" radius="md" withBorder>
                         <Card.Section>
                             <Image
-                            src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
+                            src=""
                             height={160}
                             alt="Norway"
                             />
@@ -92,9 +103,9 @@ function Main(){
                     </Card>
                 </Carousel.Slide>
             </Carousel>
+        </Flex>
 
-        </main>
     )
 }
 
-export default Main;
+export default CarouselCharacter;
