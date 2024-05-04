@@ -1,6 +1,7 @@
 import styles from './styles.module.css';
 import { Carousel } from '@mantine/carousel';
 import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
+import '@mantine/carousel/styles.css';
 
 function Main(){
     return(
